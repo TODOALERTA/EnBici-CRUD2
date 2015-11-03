@@ -17,7 +17,6 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 	
 	private EditText et1, et2, et3, et4, et5, et6, et7;
-    private Button _ingreso, _borrar, _consulta, _modificar;
     
     
     @Override
@@ -66,7 +65,7 @@ public class MainActivity extends Activity {
 		        et5.setText("");
 		        et6.setText("");
 		        et7.setText("");
-	            Toast.makeText(this, "Eror, Ingrese un N° de Cedula",
+	            Toast.makeText(this, "Error, Ingrese un N° de Cedula",
 	                    Toast.LENGTH_SHORT).show();
 
 		   }else{
@@ -97,7 +96,7 @@ public class MainActivity extends Activity {
 	    	        et5.setText("");
 	    	        et6.setText("");
 	    	        et7.setText("");
-	    	        Toast.makeText(this, "Se cargaron los datos de la persona",
+	    	        Toast.makeText(this, "Se ha guardado un nuevo registro",
 	    	                Toast.LENGTH_SHORT).show();
 
 		   }
@@ -113,7 +112,7 @@ public class MainActivity extends Activity {
 		        et5.setText("");
 		        et6.setText("");
 		        et7.setText("");
-	            Toast.makeText(this, "Eror, Ingrese un N° de Cedula",
+	            Toast.makeText(this, "Error, Ingrese un N° de Cedula",
 	                    Toast.LENGTH_SHORT).show();
 		   }else{
 			   AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
@@ -147,7 +146,7 @@ public class MainActivity extends Activity {
 		        et5.setText("");
 		        et6.setText("");
 		        et7.setText("");
-	            Toast.makeText(this, "Eror, Ingrese un N° de Cedula",
+	            Toast.makeText(this, "Error, Ingrese un N° de Cedula",
 	                    Toast.LENGTH_SHORT).show();
 		   }else{
 			   AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
@@ -183,7 +182,7 @@ public class MainActivity extends Activity {
 		        et5.setText("");
 		        et6.setText("");
 		        et7.setText("");
-	            Toast.makeText(this, "Eror, Ingrese un N° de Cedula",
+	            Toast.makeText(this, "Error, Ingrese un N° de Cedula",
 	                    Toast.LENGTH_SHORT).show();
 		   }else{
 
@@ -207,7 +206,7 @@ public class MainActivity extends Activity {
 		        int cant = bd.update("alquiladas", registro, "cedula=" + cedula, null);
 		        bd.close();
 		        if (cant == 1){
-		            Toast.makeText(this, "se modificaron los datos", Toast.LENGTH_SHORT)
+		            Toast.makeText(this, "se han modifido los datos", Toast.LENGTH_SHORT)
 		                    .show();
 		        }else{
 		            Toast.makeText(this, "No existe registro con este N° de Cédula",
