@@ -224,7 +224,7 @@ public class MainActivity extends Activity {
 	        et5.setText("");
 	        et6.setText("");
 	        et7.setText("");
-            Toast.makeText(this, "Se ha limpiado la pantalla",
+            Toast.makeText(this, "**Se ha limpiado la pantalla**",
                     Toast.LENGTH_SHORT).show();
 	   }
 	   
